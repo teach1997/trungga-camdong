@@ -1,3 +1,25 @@
 .p-logo {
-    margin-top: -20px;
+    margin-top: -10px;
+}
+
+.contact {
+    text-align: left;
+}
+
+p {
+    margin-top: -12px;
+    font-size: small;
+}
+h2 {
+    margin-bottom: 15px;
+    color: goldenrod;
+    font-size: medium;
+}
+
+h4 {
+    color: darkgray;
+}
+
+.nav {
+    height: 6rem;
 }

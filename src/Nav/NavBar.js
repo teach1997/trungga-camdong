@@ -1,44 +1,32 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavBar.css"
 import {
-  Button,
   Navbar,
   Nav,
-  NavDropdown,
-  Form,
-  FormControl,
   Image,
 } from "react-bootstrap";
 import logo from '../image/LOGO1.png'
 
 export function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">
+    <Navbar bg="light" expand="sm">
+      <Navbar.Brand href="/">
           <Image src={logo} alt='logo' fluid />
           <p className="p-logo">Thuân Vải</p>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
-          </NavDropdown>
+            <div>
+          <h4>Trứng gà Cẩm Đông</h4>
+          <p>Trứng sạch cho mọi nhà</p>
+          </div>
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
+        <div className="contact">
+        <h2>Liên hệ với chúng tôi</h2>
+        <p>SĐT: 0973034639</p>
+        <p>Email: trunggacamdong@gmail.com</p>
+        </div>
       </Navbar.Collapse>
     </Navbar>
   );
